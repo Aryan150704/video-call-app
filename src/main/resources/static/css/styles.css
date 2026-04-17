@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a; /* dark background */
+    color: #e5e7eb;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card styling */
+.login-form,
+.social-icons {
+    background: #111827;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+/* Social icons panel */
+.social-icons {
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    background: #1f2937;
+    color: #e5e7eb;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus glow */
+.login-form input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+/* Button */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Button hover */
+.login-form button:hover {
+    background: #2563eb;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
+}
+
+/* Links */
+.login-form a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+/* Social icons */
+.social-icons a {
+    display: inline-block;
+    margin: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #1f2937;
+    color: #3b82f6;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Social hover glow */
+.social-icons a:hover {
+    background: #3b82f6;
+    color: white;
+    box-shadow: 0 0 10px #3b82f6;
+}
+
+.user-email {
+    font-size: 14px !important;
+    color: #9ca3af;
+}

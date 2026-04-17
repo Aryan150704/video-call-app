@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Cards */
+.image-container,
+.connected-users,
+.new-meeting {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+/* Layout */
+.image-container {
+    flex: 1;
+    max-width: 800px;
+}
+
+.connected-users {
+    flex: 1;
+    max-width: 350px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Users Section */
+.connected-users h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #3b82f6;
+}
+
+.connected-users ul {
+    list-style: none;
+    padding: 0;
+}
+
+.connected-users li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.connected-users li:hover {
+    background: #1f2937;
+}
+
+/* Icons */
+.connected-users li i {
+    margin-right: 10px;
+}
+
+/* Status */
+.connected-users li i.online {
+    color: #22c55e;
+}
+
+.connected-users li i.offline {
+    color: #ef4444;
+}
+
+/* Divider */
+.connected-users li:not(:last-child) {
+    border-bottom: 1px solid #374151;
+}
+
+/* Spacing */
+.container > div:not(:last-child) {
+    margin-right: 20px;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Meeting Section */
+.new-meeting {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.new-meeting button,
+.join-meeting button,
+#logoutBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Create meeting */
+.new-meeting button {
+    background: #3b82f6;
+    color: white;
+}
+
+.new-meeting button:hover {
+    background: #2563eb;
+    box-shadow: 0 0 10px #3b82f6;
+}
+
+/* Join section */
+.join-meeting {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.join-meeting input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    background: #1f2937;
+    color: #e5e7eb;
+    outline: none;
+}
+
+.join-meeting input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 6px #3b82f6;
+}
+
+.join-meeting button {
+    margin-left: 10px;
+    background: #22c55e;
+    color: white;
+}
+
+.join-meeting button:hover {
+    background: #16a34a;
+    box-shadow: 0 0 8px #22c55e;
+}
+
+/* Logout */
+#logoutBtn {
+    background: #ef4444;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#logoutBtn:hover {
+    background: #dc2626;
+    box-shadow: 0 0 8px #ef4444;
+}
