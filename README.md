@@ -33,3 +33,23 @@ A full-stack **real-time video calling web application** built using **Spring Bo
 ---
 
 ## 📂 Project Structure
+videoCall/
+│
+├── src/main/java/com/Aryan/videoCall/
+│ ├── user/
+│ │ ├── User.java
+│ │ ├── UserController.java
+│ │ └── UserService.java
+│ └── VideoCallApplication.java
+│
+├── src/main/resources/
+│ ├── application.properties
+│ └── static/
+│ ├── index.html
+│ ├── login.html
+│ ├── register.html
+│ ├── videocall.html
+│ ├── css/
+│ └── js/
+│
+└── pom.xml
